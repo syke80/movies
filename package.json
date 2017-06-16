@@ -1,0 +1,30 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node_modules/.bin/http-server",
+    "build": "node_modules/.bin/webpack",
+    "watch": "node_modules/.bin/npm-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
+    "html-loader": "^0.4.5",
+    "http-server": "^0.10.0",
+    "npm-watch": "^0.1.9",
+    "webpack": "^2.6.1"
+  },
+  "watch": {
+    "build": "src/**/*.{js,html}"
+  }
+}
